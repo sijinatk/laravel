@@ -33,9 +33,19 @@
                                                         <label>Id</label>
                                                         <input type="text" name="id_id" id="id_id"  >
                                                     </div>
+                                                    <br>
+                                                    <div id="opt_div" style="display: none;">
+                                                     <div class="col-md-6 pl0" >
+                                                       <label> Number of Options: (max. 10)</label>
+                                                     <input type="text" id="member" name="member" value=""><br />
+    <a href="#" id="filldetails" onclick="addFields()">Add Options</a>
+    <div id="container"/>
+                                        </div>
+                                    </div>
+                                </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                           
                                         <div class="row mt43">
                                             <div class="col-md-12">
                                                 <center>
@@ -48,3 +58,4 @@
                             </div>
                         </div>                    
  @include('admin.layout.footer')
+ <script src="{{ asset('admin_assets/js/custom_js/add_elements.js') }}"></script>

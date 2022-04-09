@@ -24,6 +24,8 @@
                                                         <select name="{{ $form_setup->name }}" id="{{ $form_setup->input_id }}"  class="col-md-6 pl0">
                                                                 <option value="">Select {{ $form_setup->label }}</option>
                                                         </select>
+                                                         @elseif($form_setup->type=="textarea")
+                                                         <textarea rows="3" id="{{ $form_setup->input_id }}" name="{{ $form_setup->name }}" ></textarea>
                                                         @endif
                                                     </div>
                                                     @endforeach
